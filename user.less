@@ -1,0 +1,124 @@
+// This is your user.less. Use it to override the default styling. When this
+// file is first created all lines are commented out (start with //) and so it
+// has no effect in the editor's style.
+
+// To change the font uncomment the following line:
+//@codeFont: Menlo;
+//@codeFont: Input Mono;
+//@codeFont: Source Sans Pro;
+//@codeFont: Source Code Pro;
+@codeFont: Fantasque Sans Mono;
+
+//@proportionalFont: Input Mono;
+//@proportionalFont: Source Sans Pro;
+@proportionalFont: Fantasque Sans Mono;
+
+@fontFamily: @proportionalFont;
+
+// To change the font size uncomment the following line:
+@fontSize: 13pt;
+
+//@inkColor: black;
+
+// Dark
+//@inkColor: #ddd;
+//@textColor: @inkColor;
+//@paperColor: #272822;
+
+// Light
+@inkColor: #222;
+@textColor: @inkColor;
+@paperColor: #eee;
+
+// @accentColor1: #519ed4; // blue
+@accentColor1: #4fa6c7; // viking
+@accentColor2: #4bbd55; // dull lime
+@accentColor3: #a84fc7; // deep lilac
+@accentColor4: #41a54a; // fruit sallad
+@indicatedColor: #519ed4; // blue
+@accentColor5: #e3ad59; // rob roy
+
+// Selection
+@focusedSelectionBackgroundColor: mix(@inkColor, @paperColor, 20%);
+@selectionBackgroundColor: mix(@inkColor, @paperColor, 0%);
+//@selectionBackgroundColor: mix(@textColor, @paperColor, 20%);
+//@focusedSelectionBackgroundColor: mix(@inkColor, transparent, 85%);
+
+.cm-heading-wrapper {
+  color: @accentColor1;
+}
+
+.cm-list-bullet {
+  color: @accentColor1;
+}
+
+.cm-em {
+  color: @accentColor3;
+}
+
+.cm-strong {
+  color: @accentColor3;
+}
+
+//.cm-body-wrapper {
+body {
+  font-weight: 200;
+}
+
+.cm-text {
+  line-height: 1.8em;
+}
+
+.cm-footnotelink {
+  font-size: 0.7em;
+  color: @accentColor4;
+}
+
+.CodeMirror .cm-footnotelinkdefinition {
+  font-size: 0.7em;
+}
+
+.cm-linkid {
+  color: @accentColor4;
+}
+
+.CodeMirror pre .cm-htmlblock {
+  margin-left: 0;
+}
+
+.CodeMirror .cm-htmlblock-background {
+  border: 0 !important;
+}
+
+//.CodeMirror .cm-htmlblock-start-background,
+.CodeMirror .cm-htmlblock,
+//.CodeMirror .cm-htmlblock-end-background,
+//.CodeMirror .cm-htmlblock-wrapper
+{
+  margin-left: 4rem !important;
+  font-size: 0.8em;
+}
+
+.cm-mode-comment {
+  color: #aa8;
+  font-style: italic;
+}
+
+//.CodeMirror-lines.cm-hidesyntax {
+//  max-width: 60em !important;
+//}
+
+.cm-autolink {
+  background-color: #b0e6b5;
+}
+
+.cm-codeblock-wrapper {
+  font-family: @codeFont;
+  font-size: @fontSize - 1pt;
+  font-weight: 200;
+  //font-weight: normal;
+}
+
+//.CodeMirror-lines.cm-hidesyntax {
+//  max-width: 720px !important;
+//}
